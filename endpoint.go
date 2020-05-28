@@ -13,12 +13,32 @@ import (
 // new captain call this to find spinner to join
 func (b *beacon) newCaptain() func(http.ResponseWriter, *http.Request) {
   return func(w http.ResponseWriter, r *http.Request) {
+    valid := true
+    var spinnerInfo SpinnerInfo
+    // access spinnerTable to find a spinner
+    b.spinners.mux.Lock()
+    if len(b.spinners.table) == 0 {
+      valid = false
+    } else {
+      // TOFIX: dummy code to get first spinner
+      for _, val := range b.spinners.table {
+        spinnerInfo = val
+        break
+      }
+    }
+    b.spinners.mux.Unlock()
+
+    // assemble response
     responseBody, err := json.Marshal(map[string]interface{} {
-      "Number":20,
-      "Text":"asdf",
+      "Valid":valid,
+      "Token":b.swarm_token,
+      "Ip":b.swarm_ip,
+      "OverlayName":spinnerInfo.OverlayName,
+      "ContainerName":spinnerInfo.Id,
     })
     if err != nil {
-  		fmt.Println(err)
+      log.Println(err)
+      w.WriteHeader(http.StatusInternalServerError)
       return
   	}
     w.Header().Set("Content-Type", "application/json")
