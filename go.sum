@@ -9,6 +9,8 @@ github.com/armadanet/captain/dockercntrl v0.0.0-20200528065746-bf8a78381c3f h1:C
 github.com/armadanet/captain/dockercntrl v0.0.0-20200528065746-bf8a78381c3f/go.mod h1:6zVbYBcKeZW6Dh04hbPXA7jP/94fgLLmxq4yDIFLS2c=
 github.com/armadanet/captain/dockercntrl v0.0.0-20200528074631-abe3500b4269 h1:Yd34rpTysDB4wf7WyXmzlcgijLWQGSvXWhSKwum8NZk=
 github.com/armadanet/captain/dockercntrl v0.0.0-20200528074631-abe3500b4269/go.mod h1:6zVbYBcKeZW6Dh04hbPXA7jP/94fgLLmxq4yDIFLS2c=
+github.com/armadanet/captain/dockercntrl v0.0.0-20200603004621-490497fe2f6f h1:Yz2FPBXHhkKZe5gfEwXQQMtD4SjPdMK+vyZI9r6OZKE=
+github.com/armadanet/captain/dockercntrl v0.0.0-20200603004621-490497fe2f6f/go.mod h1:6zVbYBcKeZW6Dh04hbPXA7jP/94fgLLmxq4yDIFLS2c=
 github.com/armadanet/comms v0.0.0-20200221145451-dcf27e32ffc8 h1:qunYG4a74sNw8g4y64FunYSW6L0/FVPhxs4WXfAstkU=
 github.com/davecgh/go-spew v1.1.1/go.mod h1:J7Y8YcW2NihsgmVo/mv3lAwl/skON4iLHjSsI+c5H38=
 github.com/docker/distribution v2.7.1+incompatible h1:a5mlkVzth6W5A4fOsS3D2EO5BUmsJpcB+cRlLU7cSug=
